@@ -148,6 +148,42 @@ tbody tr:nth-child(4) .tag { background: var(--done-soft); color: var(--done); }
   outline-offset: 3px;
 }
 
+
+/* 모바일 반응형 설정 */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  main,
+  section {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  table {
+    width: 100%;
+    table-layout: fixed;
+    overflow-wrap: anywhere;
+  }
+
+  th,
+  td {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  a {
+    overflow-wrap: anywhere;
+  }
+}
+
 .week-grid li {
   list-style: none;
 }
